@@ -1,0 +1,58 @@
+api_platform:
+    title: 'Todo'
+
+    # The description of the API.
+    description: 'Todo app API'
+
+    # The version of the API.
+    version: '0.0.1'
+
+    # Specify a name converter to use.
+    name_converter: ~
+
+    # Specify a path name generator to use.
+    path_segment_name_generator: 'api_platform.path_segment_name_generator.underscore'
+
+    eager_loading:
+        # To enable or disable eager loading.
+        enabled: true
+
+        # Fetch only partial data according to serialization groups.
+        # If enabled, Doctrine ORM entities will not work as expected if any of the other fields are used.
+        fetch_partial: false
+
+        # Max number of joined relations before EagerLoading throws a RuntimeException.
+        max_joins: 30
+
+        # Force join on every relation.
+        # If disabled, it will only join relations having the EAGER fetch mode.
+        force_eager: true
+
+    swagger:
+       api_keys:
+           apiKey:
+              name: Authorization
+              type: header
+
+    # Enable the Nelmio Api doc integration.
+    enable_nelmio_api_doc: false
+
+    # Enable the Swagger documentation and export.
+    enable_swagger: true
+
+    # Enable Swagger ui.
+    enable_swagger_ui: true
+
+    # Enable the entrypoint.
+    enable_entrypoint: true
+
+    # Enable the docs.
+    enable_docs: true
+
+    exception_to_status:
+        App\Exception\DuplicateRegistrationException: 400
+
+    mapping:
+        paths:
+            - '%kernel.project_dir%/src/Entity'
+            - '%kernel.project_dir%/src/Dto'
