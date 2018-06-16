@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 13.06.18
- * Time: 22:31
+ * Time: 22:31.
  */
 
 declare(strict_types=1);
@@ -133,9 +133,10 @@ class Task
 
     /**
      * @param string $content
+     *
      * @return Task
      */
-    public function setContent(?string $content): Task
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
@@ -160,9 +161,10 @@ class Task
 
     /**
      * @param bool $completed
+     *
      * @return Task
      */
-    public function setCompleted(?bool $completed): Task
+    public function setCompleted(?bool $completed): self
     {
         $this->completed = $completed;
 
@@ -179,9 +181,10 @@ class Task
 
     /**
      * @param User $owner
+     *
      * @return Task
      */
-    public function setOwner(?User $owner): Task
+    public function setOwner(?User $owner): self
     {
         $this->owner = $owner;
 

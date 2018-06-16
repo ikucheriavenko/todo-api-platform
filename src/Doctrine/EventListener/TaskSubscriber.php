@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 6/16/18
- * Time: 11:28 AM
+ * Time: 11:28 AM.
  */
 
 declare(strict_types=1);
@@ -17,8 +17,7 @@ use Doctrine\ORM\Events;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 
 /**
- * Class TaskSubscriber
- * @package App\Doctrine\EventListener
+ * Class TaskSubscriber.
  */
 class TaskSubscriber implements EventSubscriber
 {
@@ -26,6 +25,7 @@ class TaskSubscriber implements EventSubscriber
 
     /**
      * TaskSubscriber constructor.
+     *
      * @param TaskManagerInterface $taskManager
      */
     public function __construct(TaskManagerInterface $taskManager)

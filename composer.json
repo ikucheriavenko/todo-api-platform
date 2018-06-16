@@ -18,11 +18,11 @@
     },
     "require-dev": {
         "symfony/dotenv": "^4.1",
-        "friendsofphp/php-cs-fixer": "^2.11",
         "hamcrest/hamcrest-php": "^2.0",
         "symfony/profiler-pack": "^1.0",
         "symfony/var-dumper": "^4.0",
-        "symfony/phpunit-bridge": "^4.0"
+        "symfony/phpunit-bridge": "^4.0",
+        "symplify/easy-coding-standard": "^4.4"
     },
     "config": {
         "preferred-install": {

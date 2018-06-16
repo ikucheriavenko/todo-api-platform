@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 6/15/18
- * Time: 11:36 AM
+ * Time: 11:36 AM.
  */
 
 namespace App\Entity\Interfaces;
@@ -19,19 +19,20 @@ interface AppUserInterface extends UserInterface
 
     /**
      * @param string $username
+     *
      * @return AppUserInterface
      */
-    public function setUsername(?string $username): AppUserInterface;
+    public function setUsername(?string $username): self;
 
     /**
      * @return string
      */
     public function getPassword(): ?string;
 
-
     /**
      * @param string $password
+     *
      * @return AppUserInterface
      */
-    public function setPassword(?string $password): AppUserInterface;
+    public function setPassword(?string $password): self;
 }

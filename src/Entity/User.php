@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 13.06.18
- * Time: 22:31
+ * Time: 22:31.
  */
 
 declare(strict_types=1);
@@ -98,6 +98,7 @@ class User implements AppUserInterface
 
     /**
      * @param string $username
+     *
      * @return AppUserInterface
      */
     public function setUsername(?string $username): AppUserInterface
@@ -117,6 +118,7 @@ class User implements AppUserInterface
 
     /**
      * @param string $password
+     *
      * @return AppUserInterface
      */
     public function setPassword(?string $password): AppUserInterface

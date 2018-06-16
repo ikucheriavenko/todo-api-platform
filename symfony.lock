@@ -83,6 +83,9 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "jean85/pretty-package-versions": {
+        "version": "1.2"
+    },
     "lexik/jwt-authentication-bundle": {
         "version": "2.3",
         "recipe": {
@@ -104,6 +107,18 @@
             "ref": "7b6cbc842f8cd3d550815247d12294f6f304a8c4"
         }
     },
+    "nette/finder": {
+        "version": "v2.4.1"
+    },
+    "nette/robot-loader": {
+        "version": "v3.0.3"
+    },
+    "nette/utils": {
+        "version": "v2.5.2"
+    },
+    "ocramius/package-versions": {
+        "version": "1.3.0"
+    },
     "php-cs-fixer/diff": {
         "version": "v1.3.0"
     },
@@ -116,6 +131,9 @@
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
     },
+    "phpstan/phpdoc-parser": {
+        "version": "0.2"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -127,6 +145,12 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "slevomat/coding-standard": {
+        "version": "4.6.2"
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.3.0"
     },
     "stof/doctrine-extensions-bundle": {
         "version": "1.2",
@@ -304,6 +328,21 @@
     },
     "symfony/yaml": {
         "version": "v4.1.0"
+    },
+    "symplify/better-phpdoc-parser": {
+        "version": "v4.4.2"
+    },
+    "symplify/coding-standard": {
+        "version": "v4.4.2"
+    },
+    "symplify/easy-coding-standard": {
+        "version": "v4.4.2"
+    },
+    "symplify/package-builder": {
+        "version": "v4.4.2"
+    },
+    "symplify/token-runner": {
+        "version": "v4.4.2"
     },
     "twig/twig": {
         "version": "v2.4.8"

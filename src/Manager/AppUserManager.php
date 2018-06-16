@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 6/15/18
- * Time: 11:27 AM
+ * Time: 11:27 AM.
  */
 
 declare(strict_types=1);
@@ -35,7 +35,7 @@ class AppUserManager implements AppUserManagerInterface
      */
     public function registerUser(AuthUser $dto): AppUserInterface
     {
-        $user =  $this->createUser()
+        $user = $this->createUser()
             ->setUsername($dto->getUsername())
             ->setPassword($this->hashPassword($dto->getPassword()));
 

@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 13.06.18
- * Time: 23:28
+ * Time: 23:28.
  */
 
 declare(strict_types=1);
@@ -21,8 +21,7 @@ use Symfony\Component\HttpKernel\Event\GetResponseForControllerResultEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
- * Class RegistrationSubscriber
- * @package App\EventListener
+ * Class RegistrationSubscriber.
  */
 class RegistrationSubscriber implements EventSubscriberInterface
 {
@@ -30,7 +29,6 @@ class RegistrationSubscriber implements EventSubscriberInterface
      * @var AppUserManagerInterface
      */
     private $userManager;
-
 
     public function __construct(AppUserManagerInterface $userManager)
     {
@@ -78,5 +76,4 @@ class RegistrationSubscriber implements EventSubscriberInterface
 
         $resultEvent->setResponse(new JsonResponse(null, Response::HTTP_CREATED));
     }
-
 }

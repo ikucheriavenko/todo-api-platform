@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 6/15/18
- * Time: 12:47 PM
+ * Time: 12:47 PM.
  */
 
 declare(strict_types=1);
@@ -14,8 +14,7 @@ use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class AppUserParameterPass
- * @package App\DependencyInjection\Compiler
+ * Class AppUserParameterPass.
  */
 class AppUserParameterPass implements CompilerPassInterface
 {
@@ -45,7 +44,8 @@ class AppUserParameterPass implements CompilerPassInterface
 
     /**
      * @param string $key
-     * @param array $array
+     * @param array  $array
+     *
      * @return array|mixed
      */
     public function getNestedConfigValue(string $key, array $array)
@@ -65,6 +65,7 @@ class AppUserParameterPass implements CompilerPassInterface
 
             $array = $array[$segment];
         }
+
         return $array;
     }
 }

@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 13.06.18
- * Time: 23:15
+ * Time: 23:15.
  */
 
 namespace App\Dto\User;
@@ -97,9 +97,10 @@ class AuthUser
 
     /**
      * @param string $username
+     *
      * @return AuthUser
      */
-    public function setUsername(?string $username): AuthUser
+    public function setUsername(?string $username): self
     {
         $this->username = $username;
 
@@ -116,13 +117,13 @@ class AuthUser
 
     /**
      * @param string $password
+     *
      * @return AuthUser
      */
-    public function setPassword(?string $password): AuthUser
+    public function setPassword(?string $password): self
     {
         $this->password = $password;
 
         return $this;
     }
-
 }

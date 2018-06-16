@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ivan Kucheriavenko
  * Date: 6/16/18
- * Time: 11:35 AM
+ * Time: 11:35 AM.
  */
 
 declare(strict_types=1);
@@ -14,8 +14,7 @@ use App\Entity\Task;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 /**
- * Class TaskManager
- * @package App\Manager
+ * Class TaskManager.
  */
 class TaskManager implements TaskManagerInterface
 {
@@ -23,6 +22,7 @@ class TaskManager implements TaskManagerInterface
 
     /**
      * TaskManager constructor.
+     *
      * @param TokenStorageInterface $tokenStorage
      */
     public function __construct(TokenStorageInterface $tokenStorage)
@@ -31,7 +31,7 @@ class TaskManager implements TaskManagerInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function setOwner(Task $task): Task
     {
