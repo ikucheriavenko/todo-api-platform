@@ -1,0 +1,6 @@
+imports:
+    - { resource: '%vendor_dir%/symplify/easy-coding-standard/config/symfony.yml' }
+
+services:
+    PhpCsFixer\Fixer\Operator\BinaryOperatorSpacesFixer:
+        align_double_arrow: true
